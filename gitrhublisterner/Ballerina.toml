@@ -1,0 +1,8 @@
+[package]
+org = "Kavithorg2"
+name = "gitrhublisterner"
+version = "1.0.0"
+distribution = "2201.7.0"
+
+[build-options]
+observabilityIncluded = true
