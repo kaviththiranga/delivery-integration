@@ -1,4 +1,3 @@
-import ballerinax/mysql;
 import ballerinax/mysql.driver as _;
 import ballerina/http;
 
@@ -9,17 +8,6 @@ import ballerina/http;
     id: "billingAPI-1bc67315-66a1-4031-a7d9-c3807fadf712"
 }
 service / on new http:Listener(9090) {
-
-    @display {
-        label: "mysql",
-        id: "mysql-53e287ac-d1f6-4bd2-b428-fe1f5db1008e"
-    }
-    mysql:Client mysqlEp;
-
-    function init() returns error? {
-        self.mysqlEp = check new ();
-    }
-
     # A resource for generating greetings
     # + name - the input string name
     # + return - string name with hello message or error
